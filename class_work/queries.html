@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Queries</title>
+</head>
+<body>
+
+
+
+<h2>This is test</h2>
+
+<p>jlskfdjs kslfdk alfkjsalfk slkdfjsalkdfjlsdkjfsld fksfdj;l skd</p>
+<p>jlskfdjs kslfdk alfkjsalfk slkdfjsalkdfjlsdkjfsld fksfdj;l skd</p>
+
+<p>jlskfdjs kslfdk alfkjsalfk slkdfjsalkdfjlsdkjfsld fksfdj;l skd</p>
+<p>jlskfdjs kslfdk alfkjsalfk slkdfjsalkdfjlsdkjfsld fksfdj;l skd</p>
+<h2>This is test</h2>
+<p>jlskfdjs kslfdk alfkjsalfk slkdfjsalkdfjlsdkjfsld fksfdj;l skd</p>
+<p>jlskfdjs kslfdk alfkjsalfk slkdfjsalkdfjlsdkjfsld fksfdj;l skd</p>
+<p>jlskfdjs kslfdk alfkjsalfk slkdfjsalkdfjlsdkjfsld fksfdj;l skd</p>
+<h2>This is test</h2>
+<p>jlskfdjs kslfdk alfkjsalfk slkdfjsalkdfjlsdkjfsld fksfdj;l skd</p>
+<p>jlskfdjs kslfdk alfkjsalfk slkdfjsalkdfjlsdkjfsld fksfdj;l skd</p>
+
+<h2>This is test</h2>
+
+    
+<!-- select * from students limit 0, 2;
+select * from students limit 2, 2;
+select * from students limit 4, 2;
+
+select * from students order by name ASC;
+
+insert into students(name, email, phone, gender) values('test', 'test@gmail.com', '123456789', 'M');
+insert into students(name, email, phone, gender, address) values ('Rohit', 'rohit@gmail.com', '93872095380', 'M', 'SRDR'), ('Hemant', 'hemant@gmail.com', '93872095380', 'M', 'SRDR'), ('anil', 'anil@gmail.com', '3453453254', 'M', 'SRDR');
+
+
+delete from students where id=5; // age we have to see
+
+update students set name="Test", address="Churu" where id=7;
+
+select * from students;
+
+select name , email, address from students where address="Churu" or name="Rohit";
+
+select * from `students` where phone like '123%';
+
+
+select SUM(fee) as total_fee from students;
+select AVG(fee) as avg_fee from students;
+select count(fee) as total_student from students;
+
+
+UPDATE students SET dob='2000-01-01' WHERE id=1; -->
+
+<!-- There are many types of SQL Commands -->
+<!-- 
+SELECT // extracts data from a database
+UPDATE // updates data in a database
+INSERT INTO // inserts new data into a database 
+DELETE // deletes data from a database
+CREATE TABLE // creates a new table
+ALTER TABLE // modifies a table
+CREATE DATABASE // creates a new database
+ALTER DATABASE // modifies a database
+CREATE INDEX // creates an index
+DROP INDEX // deletes an index 
+DROP TABLE // deletes a table -->
+
+
+<!-- for SELECT statement -->
+<!-- 
+    SELECT column1, column2.....
+    FROM table_name;
+    selecte all columns -  SELECT * FROM table_name;
+ -->
+
+
+<!-- SELECT DISTINCT 
+    DISTINCT (Different)
+
+    SELECT DISTINCT column1, column2.....
+    FROM table_name
+
+    counting row or values
+    SELECT COUNT(DISTINCT name) FROM table_name
+-->
+
+
+<!-- WHERE statements
+    
+    SELECT column1, column2.....
+    FROM table_name
+    WHERE condition
+
+where clause is use in select, update, delete etc.
+
+- we can also use the following operatos in WHERE clause:
+
+=
+<
+>
+<=
+>=
+<> not equal
+BETWEEN // between a certain range
+LIKE //  Search for a pattern
+IN // To specify multiple possible vlaues for a column
+
+ -->
+
+<!-- BETWEEN  
+
+ SELECT * FROM column1...
+ WHERE id BETWEEN 4 and 8
+ -->
+
+ 
+
+<!-- ORDER BY 
+    
+    SELECT column1, column2....
+    FROM table_name
+    ORDER BY column1, column2...... ASC|DESC
+
+ -->
+
+<!--Date datayep
+    
+    year-mont-day
+    2023-12-25;
+
+ -->
+
+<!-- 
+    Create table table_name(
+        column 1 datatype,
+        column 2 datatype,
+        column 3 datatype
+    )
+ -->
+
+
+
+ <!-- Datatypes in mySQL -->
+<!-- 
+
+There are three main datatype in MYSQL which are:
+- String
+- Numeric
+- Data and Time
+
+String dataype:
+- char(size) 0-255
+- varchar(size) 0-65535
+- binary(size)
+- varbinary(size)
+- Tinytext 255 characters
+- Text(size) 65535 bytes
+- Mediumtext 16,777,215 characters
+- LongText 4,294,967,295 characters
+- Tinyblob 255 bytes
+- BLOB(size) 65535 bytes
+- Mediumblob 16,777215 bytes
+- Longblob 4,294,967,295 bytes
+- Enum(val1, val2, val3....) list up to 65535 values
+- set
+
+Numeric datatypes:
+- bit
+- int
+- integer
+- tinyint
+- smallint
+- mediumint
+- bigint
+- bool
+- boolean
+- float
+- double(size, d)
+- decimal(size, d)
+- dec(size, d)
+
+Date and time datatype:
+- date // 'year-month-day' to 'year-month-day' // '1000-01-01' to '9999-01-01'
+- datetime // year-month-day hh:mm:ss
+- timestamp
+- time // hh:mm:ss
+- year // four digit formate : 2023
+
+ -->
+
+
+<!-- 
+    make connection in config file: ---
+
+    $host = "";
+    $usename = "";
+    $password = "";
+    $databaseName = "";
+
+    $conn = mysqli_connect($host, $usename, $password, $databaseName);
+ -->
+
+
+
+
+
+<!-- delete hone par message success show nahi ho raha hai -->
+
+
+
+
+</body>
+</html>

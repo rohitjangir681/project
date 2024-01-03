@@ -1,0 +1,5 @@
+AJAX = Asynchronous javaScript and XML
+CSS = Cascading Style Sheets
+HTML = Hyper Text Markup language 
+PHP = PHP Hypertext Preprocessor 
+This is txt file
